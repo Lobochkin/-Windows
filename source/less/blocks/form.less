@@ -1,0 +1,102 @@
+.form__conteiner {
+  display: flex;
+  justify-content: space-between;
+  width: 474px;
+  margin-bottom: 27px;
+}
+
+.form__color {
+  width: 60px;
+  height: 60px;
+}
+
+.form__color-- {
+  &1 {
+    background-image: url("../img/color1.png");
+  }
+
+  &2 {
+    background-image: url("../img/color2.png");
+  }
+
+  &3 {
+    background-image: url("../img/color3.png");
+  }
+
+  &4 {
+    background-image: url("../img/color4.png");
+  }
+
+  &5 {
+    background-image: url("../img/color5.png");
+  }
+
+  &6 {
+    background-image: url("../img/color6.png");
+  }
+
+  &7 {
+    background-image: url("../img/color7.png");
+  }
+}
+
+.form__input {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+input:checked ~ .form__input {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-right: 125px;
+  font-size: 14px;
+}
+
+.form__conteiner-btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__button {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 38px;
+  border-radius: 4px;
+  border: 2px solid @orange;
+  background-color: @orange;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  &:hover {
+    color: @grey;
+    background-color: #ffffff;
+    border: 2px solid @orange;
+  }
+
+  &:active {
+    outline: none;
+    color: #000000;
+    background-color: #e1f0f8;
+    border: 2px solid @orange;
+  }
+}
+
+.form__btn-send {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid @lightGrey;
+  color: @lightGrey;
+  font-size: 14px;
+  line-height: 18px;
+}
